@@ -2619,15 +2619,20 @@ input, select, textarea {
 
 /* Icons */
 
-	ul.icons {
+	.icons {
+		display: flex;
+		gap: .5em;
+		/* align-items: start; */
+		justify-content: center;
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		
 	}
 
 		ul.icons li {
-			display: inline-block;
-			padding: 0 0.65em 0 0;
+			/* display: inline-block;
+			padding: 0 0.65em 0 0; */
 		}
 
 			ul.icons li:last-child {
@@ -3867,6 +3872,12 @@ input, select, textarea {
 			font-size: 0.8em;
 			text-align: center;
 		}
+		#footer .icons {
+			width: 100%;
+			margin: 2.5em 0 2em 0;
+			font-size: 1.5em;
+			text-align: center;
+		}
 
 		@media screen and (max-width: 1280px) {
 
@@ -3932,7 +3943,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			#wrapper {
-				max-width: calc(100% - 2em);
+				max-width: calc(100% - 4em);
 			}
 
 		}
