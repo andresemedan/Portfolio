@@ -3495,7 +3495,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
-			#nav {
+			#wrapper {
 				max-width: calc(100% - 1em);
 			}
 
