@@ -3474,6 +3474,10 @@ input, select, textarea {
 			background-color: #eaecff;
 		}
 
+		.dark-mode .coding__icon {
+			/* background: radial-gradient(#3769D3,#072644, #202020); */
+		}
+
 		@media screen and (max-width: 736px) {
 			#nav {
 				width: 100%;
@@ -4004,4 +4008,16 @@ form {
 
 form .text-box {
 	margin-bottom: 1.5em;
+}
+
+
+/* --------------------------------Coding Icons ------------------------------------ */
+
+.coding__icon {
+	width:9%;
+	padding: .3em;
+
+}
+.coding__icon + .coding__icon {
+	margin-left: 2rem;
 }
