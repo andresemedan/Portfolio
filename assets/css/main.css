@@ -3470,9 +3470,7 @@ input, select, textarea {
 			background-color: #eaecff;
 		}
 
-		.dark-mode .coding__icon {
-			/* background: radial-gradient(#3769D3,#072644, #202020); */
-		}
+		
 
 		@media screen and (max-width: 736px) {
 			#nav {
@@ -3491,12 +3489,19 @@ input, select, textarea {
 					left:40%;
 				}
 
+				.coding__icon {
+					width: 15%;
+				}
+
 		}
 
 		@media screen and (max-width: 480px) {
 
 			#wrapper {
 				max-width: calc(100% - 1em);
+			}
+			.coding__icon {
+				width: 25%;
 			}
 
 		}
@@ -4008,7 +4013,10 @@ form .text-box {
 
 
 /* --------------------------------Coding Icons ------------------------------------ */
-
+/* .icons__container {
+	display:flex;
+	flex-wrap: wrap;
+} */
 .coding__icon {
 	width:9%;
 	padding: .3em;
@@ -4016,4 +4024,20 @@ form .text-box {
 }
 .coding__icon + .coding__icon {
 	margin-left: 2rem;
+}
+
+@media screen and (max-width: 736px) {
+
+	.coding__icon {
+		width: 15%;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	.coding__icon {
+		width: 14%;
+	}
+
 }
